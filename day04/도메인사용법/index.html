@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang = "ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>도메인사용법</title>
+        <style>
+            *{margin: 0; padding: 0;}
+            #a{width: 400px; height: 400px; background-color: blue;}
+        </style>
+    </head>
+    <body>
+        <img src="1.jpg" alt="">
+        <!-- 도메인에 html파일을 올릴때 img태그처럼 다른 파일도 필요한 태그를 사용했으면
+        같이 파일질라 서버에 올려줘야 도메인에서 확인 가능하다. -->
+
+        <div id = "a"></div>
+        <a href = "tel:01012345678">1번a태그</a>
+        <!-- a태그 안에 tel:연락처 를 작성하면
+            대상태그를 스마트폰에서 (컴퓨터에서 효과X) 터치하면
+            바로 전화를 걸 수 있도록 스마트폰에서 어플이 실행된다 -->
+            
+        <a href = "sms:01012345678">2번a태그</a>
+        <!-- a태그 안에 sms:연락처 를 작성하면
+        대상태그를 스마트폰에서 (컴퓨터에서 효과X) 터치하면
+        바로 문자를 보낼 수 있도록 스마트폰에서 어플이 실행된다 -->
+    
+    </body>
+</html> 
