@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>float</title>
+        <style>
+            *{margin: 0; padding: 0;}
+            li{list-style: none;}
+            .clearfix:after{content: ""; display: block; clear: both;}
+
+            #a{background-color: #123456;}
+            #b{background-color: #987654;}
+
+            #a li, #b li{width: 100px; height: 100px; color: white;
+                text-align: center; font-size: 25px;}
+
+            #a li:nth-child(1){background-color: red;float:left}
+            #a li:nth-child(2){background-color: green;float:left}
+            #a li:nth-child(3){background-color: orange;float: left;}
+
+            #b li:nth-child(1){background-color: pink; float: right;}
+            #b li:nth-child(2){background-color: aqua; float: right}
+            #b li:nth-child(3){background-color: violet; float: right}
+        </style>
+    </head>
+    <body>
+        <ul id="a" class="clearfix">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+
+        <ul id="b">
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+        </ul>
+    </body>
+</html>

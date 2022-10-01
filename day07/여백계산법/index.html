@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>여백계산법</title>
+        <style>
+            li{list-style: none;}
+            *{margin: 0; padding: 0;}
+            #a{width: 1400px; height: 300px; background-color: #123456;
+                margin: 0 auto;}
+
+            #a li{width: 335px; height: 300px; background-color: orange; float: left;
+                margin-left: 20px;}
+
+            #a li:nth-child(1){margin-left: 0px;}
+        </style>
+    </head>
+    <body>
+        <ul id="a" class="clearfix">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </body>
+</html>
