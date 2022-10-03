@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>여백 연습문제</title>
+        <style>
+            *{margin: 0; padding: 0;}
+            li{list-style: none;}
+            .clearfit::after{content: ""; display: block; clear: both;}
+
+            #a{width: 1400px; margin: 0 auto;}
+            #a li{width: 335px; height: 335px; float: left; margin-left: 20px; margin-bottom: 20px;}
+
+            #a li:nth-child(4n+1) {margin-left: 0px;}
+
+            #a1:hover{content: url(1-1.jpg);}
+            #a2:hover{content: url(2-1.jpg);}
+            #a3:hover{content: url(3-1.jpg);}
+            #a4:hover{content: url(4-1.jpg);}
+            #a5:hover{content: url(5-1.jpg);}
+            #a6:hover{content: url(6-1.jpg);}
+            #a7:hover{content: url(7-1.jpg);}
+            #a8:hover{content: url(8-1.jpg);}
+        </style>
+    </head>
+    <body>
+        <ul id="a" class="clearfit">
+            <li id="a1"><img src="1.jpg" alt="" style="width: 335px;height: 335px;"></li>
+            <li id="a2"><img src="2.jpg" alt="" style="width: 335px;height: 335px;"></li>
+            <li id="a3"><img src="3.jpg" alt="" style="width: 335px;height: 335px;"></li>
+            <li id="a4"><img src="4.jpg" alt="" style="width: 335px;height: 335px;"></li>
+            <li id="a5"><img src="5.jpg" alt="" style="width: 335px;height: 335px;"></li>
+            <li id="a6"><img src="6.jpg" alt="" style="width: 335px;height: 335px;"></li>
+            <li id="a7"><img src="7.jpg" alt="" style="width: 335px;height: 335px;"></li>
+            <li id="a8"><img src="8.jpg" alt="" style="width: 335px;height: 335px;"></li>
+        </ul>
+    </body>
+</html>

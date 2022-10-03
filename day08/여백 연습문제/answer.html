@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>여백 연습문제</title>
+        <style>
+            *{margin: 0; padding: 0;}
+            li{list-style:none;}
+            .clearfit::after{content: ""; display: block; clear: both;}
+            #a{width: 1400px; margin: 0 auto;}
+            #a li{width: 335px; height: 335px; float: left; margin-left: 20px; background-color: orange; margin-bottom: 20px; background-size: 335px 335px;}
+
+            #a li:nth-child(4n+1){margin-left: 0px;}
+
+            #a li:nth-child(1){background-image: url("1.jpg");}
+            #a li:nth-child(2){background-image: url("2.jpg");}
+            #a li:nth-child(3){background-image: url("3.jpg");}
+            #a li:nth-child(4){background-image: url("4.jpg");}
+            
+            #a li:nth-child(5){background-image: url("5.jpg");}
+            #a li:nth-child(6){background-image: url("6.jpg");}
+            #a li:nth-child(7){background-image: url("7.jpg");}
+            #a li:nth-child(8){background-image: url("8.jpg");}
+
+            #a li:nth-child(1):hover {background-image: url("1-1.jpg");}
+            #a li:nth-child(2):hover {background-image: url("2-1.jpg");}
+            #a li:nth-child(3):hover {background-image: url("3-1.jpg");}
+            #a li:nth-child(4):hover {background-image: url("4-1.jpg");}
+
+            #a li:nth-child(5):hover {background-image: url("5-1.jpg");}
+            #a li:nth-child(6):hover {background-image: url("6-1.jpg");}
+            #a li:nth-child(7):hover {background-image: url("7-1.jpg");}
+            #a li:nth-child(8):hover {background-image: url("8-1.jpg");}
+        </style>
+    </head>
+    <body>
+        <ul id="a" class="clearfit">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </body>
+</html>
