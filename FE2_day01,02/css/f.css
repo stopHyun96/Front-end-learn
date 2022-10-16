@@ -1,0 +1,179 @@
+.child{
+    width: 33.3%;
+    height: 100px;
+    font-size: 16px;
+    background: #ccc;
+    border: 1px solid #000;
+    float: left;
+    box-sizing: border-box;
+    /* float: left; 로 정렬시 box-sizing: border-box;를 선언해줘야 한다. */
+}
+
+.child2{
+    width: 40%;
+    background: coral;
+    color: white;
+    height: 100px;
+    text-align: center; /*text 좌우 정렬*/
+    line-height: 100px; /*text 상하 정렬*/
+}
+
+.wrap_2{
+    display: flex;
+}
+
+.ball{
+    width: 200px;
+    height: 200px;
+    background: violet;
+    color: yellow;
+    border-radius: 50%; /*div의 모서리를 원형으로 변경 입력하는 값에 따라 다른 모양이 나옴*/
+    display: flex;  /*먼저 선언을 해야함*/
+    justify-content: center;    /*div안의 요소를 가로 가운데 정렬*/
+    align-items: center;        /*div안의 요소를 세로 가운데 정렬*/
+}
+
+.center{
+    display: flex;
+    width: 100%;
+    max-width: 100%;    /*브라우저 크기가 변동될 때 비율 유지*/
+    height: 300px;
+    border: 1px solid #999;
+    justify-content: center;
+    align-items: center;
+}
+
+.rect{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    background-color: #fff;
+    margin-right: 10px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 300px;
+    background-color: #333;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/*네비게이션 css*/
+nav{
+    width: 100vw;   /*뷰 포트를 기준으로 설정*/
+    max-width: 100%;
+    height: 80px;   /*네비게이션에 일반적인 높이 60~80px*/
+    display: flex;  /*가로 정렬*/
+    align-items: center;
+    background: #333;
+    justify-content: space-around; /*왼쪽 오른쪽을 띄우고 가운데 간격 벌림*/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between; /*왼쪽 오른쪽을 붙이고 가운데 간격 벌림*/
+}
+
+.nav > li {
+    width: 200px;   /*li각각의 가로폭*/
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-transform: uppercase;/*대문자로*/
+}
+
+ul, ol, li{
+    list-style-type: none;  /*리스트 스타일 해제*/
+}
+
+a{
+    text-decoration: none;  /*언더라인 제거*/
+    color: inherit; /*상위 부모요소에서 상속 BODY*/
+}
+
+.logo{
+    color: #fff;
+    /* padding: 5px;
+    border-bottom: 1px solid #333; */
+}
+
+.login{
+    background-color: rgba(255,255,255,0);
+    border: 0px solid #ccc;
+    color: white;
+    text-transform: uppercase;/*대문자로*/
+}
+
+.dr{
+    flex-direction: column;
+}
+
+.height-400{
+    height: 400px;
+}
+
+.flex-wrap{
+    display: flex;
+    flex-wrap: nowrap;
+    flex: 100%; /*가로크기 100%와 같다*/
+    border: 1px solid #000;
+    height: 500px;
+}
+
+.flex-wrap > div {
+    width: 500px;
+    height: 200px;
+    background-color: red;
+    color: white;
+    margin-right: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order{
+    display: flex;
+    flex: 100%; /*가로*/
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+.order > div {
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100px;
+}
+
+.one{
+    flex: 10%;
+    order: 1;
+}
+.two{
+    flex: 80%;
+    order: 0;
+}
+.three{
+    flex: 10%;
+    order: -1;
+}

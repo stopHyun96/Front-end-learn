@@ -1,0 +1,25 @@
+input[type=checkbox]{
+    accent-color: violet;
+}
+input[type=range]{
+    accent-color: rgb(0,0,255);
+}
+progress{
+    accent-color: hsl(39, 100%, 50%);
+    /* hue 360도, 채도 100%, 밝기 100% */
+}
+
+/* 애니메이션 */
+.rect{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    /*position: relative;/*상대적*/
+    position: absolute;/*절대적*/
+    animation: move 2s infinite;
+    /* move라는 애니메이션이 2초동안 움직이는게 무한반복 */
+}
+@keyframes move{
+    from{left: 0px;}
+    to {left: 500px;}
+}/*키프레임 엔드*/
