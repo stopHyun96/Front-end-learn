@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>p~z_css</title>
+        <link rel="stylesheet" href="css/p~z.css">
+    </head>
+    <body>
+    <h1>perspective</h1> 
+    <p>3d위치 요소에 원근감을 제공하는데 사용</p> 
+    <p>주의사항 : 항상 상위태그가 존재해야 적용 됨</p>
+
+    <div id="div1">
+        DIV1
+        <div id="div2">DIV2</div>
+    </div>
+
+    <h1>pointer-events</h1>
+    <p>요소가 포인터 이벤트에 반응하는지 여부를 정의</p>
+    <p>auto, none</p>
+
+    <h1>position</h1>
+    <p>디스플레이 영역에서 엘리먼트의 위치에 대해서 지정</p>
+    <pre>
+        relative : 상대적 (페런츠 요소에서 영향을 받아 순차적으로 정렬)
+        absolute : 절대적 (상위 요소에 영향을 받지 않는다)
+        fixed : 고정 (스크롤바를 올려줘도 그자리 그대로 잇음)
+        sticky : 스티커처럼 그 주변을 지나갈 때 포지션 변동으로 생성
+    </pre>
+    <h1>quotes</h1>
+    <p>인용부호의 유형을 설정</p>
+
+    <p><q id="a">나는 짧은 인용</q></p>
+
+    <h1>resize</h1>
+    <pre>
+        - input 텍스트에어리어가 리사이즈 되도록 되어 있는데 이걸 막아주는 역할을 해줌
+    </pre>
+    <textarea cols="100" rows="10" 
+    placeholder="남을 비방하는 글은 사절합니다.&#13;남을 비방하는 글은 사절합니다.&#13;남을 비방하는 글은 사절합니다."></textarea>
+    <!-- cols -> 칸, rows -> 줄 -->
+    <!-- &#13; 엔터 -->
+
+    <h1>scroll-behavior</h1>
+    <p>스크롤 되는 박스 모델 직선점프 대신에 스크롤 위치를 부드럽게 애니메이션 할지에 대해서 정해줌</p>
+    <pre>
+        - auto : 기본값 직선점프
+        - smooth : 부드러운 애니메이션 효과
+        - inherit : 속성을 초기 기본값으로 설정
+    </pre>
+
+    <h1>tab-size</h1>
+    <p>탭 문자의 너비를 설정</p>
+    <p>textarea와 </p>
+    <pre id="t1">
+    I   use tab-size    4
+    </pre>
+
+    <pre id="t2">
+    I   use tab-size    16
+    </pre>
+
+    <h1>table-layout</h1>
+    </body>
+</html>
