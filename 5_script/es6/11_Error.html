@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+</head>
+<body>
+    <h1>Error Object</h1>
+    <pre>
+        error 객체는 오류가 발생할 때 오류 정보를 제공한다.
+        - Error 명
+        EvalError : 평가 오류 (더 이상 사용하지 않음)
+        RangeError : "범위를 벗어난 숫자 발생했습니다"
+        ReferenceError : 참조 오류 ("잘못된 참조가 발생했습니다")
+        SyntaxError : 구문 오류가 발생했습니다
+        TypeError : 유형 오류
+        URIError : encodeURI에서 오류가 발생했습니다
+
+        - Error Object Properties
+        name : 에러명
+        message : 오류메세지
+
+        1) 참조 오류의 경우
+        <p id="demo" style="color: red;"></p>
+        <script>
+            try{
+                addddlert("Welcome");
+            }catch(err){
+                document.getElementById("demo").innerHTML = err.name + "<br>" + err.message;
+            }
+        </script>
+        
+        2) RangeError : "범위를 벗어난 숫자 발생했습니다"
+        숫자의 우효 자릴수를 500으로 설정할 수 있다.
+
+        <p id="d2"></p>
+        <script>
+            let num = 1.00000;
+            try{
+                num.toPrecision(500);
+            }catch(err) {
+                document.getElementById("d2").innerHTML = err.name + "<br>" + err.message;
+            }
+        </script>
+
+        3)ReferenceError : 잘못된 참조가 발생했습니다.
+        <p id="d3"></p>
+        <script>
+            let x = 5;
+            //let y = 1;
+            try{
+                x = y + 1;
+            }catch(err) {
+                document.getElementById("d3").innerHTML = err.name + "<br>" + err.message;
+            }
+        </script>
+
+        5)SyntaxError : 구문 오류가 발생했습니다
+        <p id="d4"></p>
+        <script>
+            try {
+                eval("'hello")
+            }catch(err) {
+                document.getElementById("d4").innerHTML = err.name + "<br>" + err.message;
+            }
+        </script>
+
+        6)TypeError : 유형 오류
+        <p id="d5"></p>
+        <script>
+            let small = 1;
+            try{
+                small.toUpperCase();
+            }catch(err) {
+                document.getElementById("d5").innerHTML = err.name + "<br>" + err.message;
+            }
+        </script>
+
+        7)URIError : encodeURI에서 오류가 발생했습니다
+        <p id="d6"></p>
+        <script>
+
+            try{
+                decodeURI("%%%");
+            }catch(err) {
+                document.getElementById("d6").innerHTML = err.name + "<br>" + err.message;
+            }
+        </script>
+    </pre>
+</body>
+</html>
